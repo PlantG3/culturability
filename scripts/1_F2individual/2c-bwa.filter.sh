@@ -1,0 +1,16 @@
+perl ../sourcecode/samparser.bwa.sbatch.pl \
+	--mem 6G \
+	--time 0-23:00:00 \
+	--threads 4 \
+	--indir ../2-aln2B73Ref4 \
+	--outdir . \
+ 	--parserScript "../sourcecode/samparser.bwa.pl" \
+	--samtoolsModule "SAMtools/1.7-foss-2018a" \
+	--insert_min 50 \
+	--insert_max 800 \
+	--min_iden 50 \
+	--max_mismatch_perc 6 \
+	--max_tail_perc 5 \
+	--gap 0 \
+	--min_socre 40 \
+	--filefeature ".sam"

@@ -1,0 +1,12 @@
+perl ../sourcecode/trimmomatic.sbatch.pl \
+	--mem 2G \
+	--time 18:00:00 \
+	--trim_shell "../sourcecode/trimmomatic.pe.sh" \
+	--trimmomatic "path_to_your/trimmomatic-0.38.jar" \
+	--adaptor_file "path_to_your/TruSeq3-PE.fa" \
+	--indir "../1A_raw/" \
+	--outdir "." \
+	--fq1feature "_1.fq.gz" \
+	--fq2feature "_2.fq.gz" \
+	--threads 16 \
+	--min_len 60

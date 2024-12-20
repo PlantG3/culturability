@@ -1,0 +1,7 @@
+Sample	type	Rep
+K1	fast	1
+K2	fast	2
+K3	fast	3
+M1	slow	1
+M2	slow	2
+M3	slow	3

@@ -1,0 +1,5 @@
+Sample	type	Rep
+I-1	I	1
+I-2	I	2
+II-1	II	1
+II-2	II	2
